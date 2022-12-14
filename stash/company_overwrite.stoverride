@@ -4,3 +4,4 @@ desc: 添加公司规则
 rules:
  - 'DOMAIN-SUFFIX,zhihu.com,一元机场'
  - 'DOMAIN-SUFFIX,jd.com,一元机场'
+ - 'DOMAIN-SUFFIX,taobao.com,一元机场'
