@@ -1,0 +1,43 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+site/
+
+# Gradle
+.gradle/
+build/
+
+# jRebel
+rebel.xml
+
+# Shade plugin
+dependency-reduced-pom.xml
+
+**/pom.xml.releaseBackup
+**/release.properties
+*.versionsBackup
+
+*.flattened-pom.xml
+
+# 忽略
+!**/yuantu-lego-modules/yuantu-lego-module-dubbo/yuantu-lego-module-dubbo-convention/src/main/java/com/yuantu/lego/module/dubbo/convention/log
+!src/main/webapp/static/modular/system/site
+!src/main/webapp/static/modular/system/log
+!src/main/webapp/WEB-INF/view/system/site
+!src/main/webapp/WEB-INF/view/system/log
+!src/main/webapp/WEB-INF/view/frontpage/site
