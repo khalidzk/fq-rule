@@ -20,8 +20,8 @@ rules:
  - 'DOMAIN-SUFFIX,khalidlife.com,DIRECT'
  - 'DOMAIN-SUFFIX,asuscomm.com,DIRECT'
  - 'DOMAIN-SUFFIX,aliyuncs.com,DIRECT'
- - RULE-SET,company-cidr,DIRECT,no-resolve
- - SCRIPT,quic,REJECT
- - SCRIPT,khalid-ssh,REJECT
+ - 'RULE-SET,company-cidr,DIRECT,no-resolve'
+ - 'SCRIPT,quic,REJECT'
+ - 'SCRIPT,khalid-ssh,REJECT'
  
  
