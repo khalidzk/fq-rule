@@ -6,6 +6,11 @@ rule-providers:
     behavior: ipcidr # 使用 ipcidr 类规则集，可以使匹配更高效
     url: https://raw.githubusercontent.com/khalidzk/fq-rule/main/stash/lancidr.txt
     interval: 86400
+script:
+  shortcuts:
+    # 4483 与 9305 为 BiliBili 的 QUIC CDN
+    quic: network == 'udp' and (dst_port == 443 or dst_port == 4483 or dst_port == 9305)
+    khalid-ssh: dst_port == 22
 
 rules:
  - 'DOMAIN-SUFFIX,zhihu.com,一元机场'
@@ -16,5 +21,7 @@ rules:
  - 'DOMAIN-SUFFIX,asuscomm.com,DIRECT'
  - 'DOMAIN-SUFFIX,aliyuncs.com,DIRECT'
  - RULE-SET,company-cidr,DIRECT,no-resolve
+ - SCRIPT,quic,DIRECT,no-resolve
+ - SCRIPT,khalid-ssh,DIRECT,no-resolve
  
  
