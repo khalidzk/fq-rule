@@ -4,7 +4,7 @@ desc: 添加公司规则
 rule-providers:
   company-cidr:
     behavior: ipcidr # 使用 ipcidr 类规则集，可以使匹配更高效
-    url: https://raw.githubusercontent.com/khalidzk/fq-rule/main/stash/lancidr.txt
+    url: https://raw.githubusercontent.com/khalidzk/fq-rule/master/stash/lancidr.txt
     interval: 86400
 script:
   shortcuts:
