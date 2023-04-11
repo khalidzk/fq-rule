@@ -1,6 +1,12 @@
 name: 公司规则覆写
 desc: 添加公司规则
 
+rule-providers:
+  company-cidr:
+    behavior: ipcidr # 使用 ipcidr 类规则集，可以使匹配更高效
+    url: https://raw.githubusercontent.com/khalidzk/fq-rule/main/stash/lancidr.txt
+    interval: 86400
+
 rules:
  - 'DOMAIN-SUFFIX,zhihu.com,一元机场'
  - 'DOMAIN-SUFFIX,jd.com,一元机场'
@@ -9,5 +15,6 @@ rules:
  - 'DOMAIN-SUFFIX,khalidlife.com,DIRECT'
  - 'DOMAIN-SUFFIX,asuscomm.com,DIRECT'
  - 'DOMAIN-SUFFIX,aliyuncs.com,DIRECT'
+ - RULE-SET,company-cidr,DIRECT,no-resolve
  
  
