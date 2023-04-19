@@ -17,6 +17,7 @@ rules:
  - 'DOMAIN-SUFFIX,jd.com,一元机场'
  - 'DOMAIN-SUFFIX,taobao.com,一元机场'
  - 'DOMAIN-SUFFIX,bilibili.com,一元机场'
+ - 'DOMAIN-SUFFIX,github.com,一元机场'
  - 'DOMAIN-SUFFIX,khalidlife.com,DIRECT'
  - 'DOMAIN-SUFFIX,asuscomm.com,DIRECT'
  - 'DOMAIN-SUFFIX,aliyuncs.com,DIRECT'
