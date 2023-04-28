@@ -13,12 +13,12 @@ script:
     khalid-ssh: dst_port == 22
 
 rules:
- - 'DOMAIN-SUFFIX,zhihu.com,一元机场'
- - 'DOMAIN-SUFFIX,jd.com,一元机场'
- - 'DOMAIN-SUFFIX,taobao.com,一元机场'
- - 'DOMAIN-SUFFIX,bilibili.com,一元机场'
- - 'DOMAIN-SUFFIX,github.com,一元机场'
- - 'DOMAIN-SUFFIX,xiaohongshu.com,一元机场'
+ - 'DOMAIN-SUFFIX,zhihu.com,自动选择'
+ - 'DOMAIN-SUFFIX,jd.com,自动选择'
+ - 'DOMAIN-SUFFIX,taobao.com,自动选择'
+ - 'DOMAIN-SUFFIX,bilibili.com,自动选择'
+ - 'DOMAIN-SUFFIX,github.com,自动选择'
+ - 'DOMAIN-SUFFIX,xiaohongshu.com,自动选择'
  - 'DOMAIN-SUFFIX,khalidlife.com,DIRECT'
  - 'DOMAIN-SUFFIX,asuscomm.com,DIRECT'
  - 'DOMAIN-SUFFIX,aliyuncs.com,DIRECT'
