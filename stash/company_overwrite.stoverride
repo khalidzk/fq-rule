@@ -19,6 +19,8 @@ rules:
  - 'DOMAIN-SUFFIX,bilibili.com,自动选择'
  - 'DOMAIN-SUFFIX,github.com,自动选择'
  - 'DOMAIN-SUFFIX,xiaohongshu.com,自动选择'
+ - 'DOMAIN-SUFFIX,embarcadero.com,自动选择'
+ - 'DOMAIN-SUFFIX,github.com,自动选择'
  - 'DOMAIN-SUFFIX,khalidlife.com,DIRECT'
  - 'DOMAIN-SUFFIX,khalidlife.com.cn,DIRECT'
  - 'DOMAIN-SUFFIX,khalidlife.cn,DIRECT'
