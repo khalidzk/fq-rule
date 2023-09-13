@@ -13,7 +13,7 @@ script:
     khalid-ssh: dst_port == 22
 
 rules:
- - 'DOMAIN-SUFFIX,zhihu.com,Nexitally'
+ - 'DOMAIN-SUFFIX,zhihu.com,自动选择'
  - 'DOMAIN-SUFFIX,jd.com,自动选择'
  - 'DOMAIN-SUFFIX,taobao.com,自动选择'
  - 'DOMAIN-SUFFIX,bilibili.com,自动选择'
