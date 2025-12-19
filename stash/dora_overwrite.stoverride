@@ -1,0 +1,34 @@
+name: dora规则覆写
+desc: 添加dora规则
+
+rule-providers:
+  company-cidr:
+    behavior: ipcidr # 使用 ipcidr 类规则集，可以使匹配更高效
+    url: https://raw.githubusercontent.com/khalidzk/fq-rule/master/stash/lancidr.txt
+    interval: 86400
+script:
+  shortcuts:
+    # 4483 与 9305 为 BiliBili 的 QUIC CDN
+    quic: network == 'udp' and (dst_port == 443 or dst_port == 4483 or dst_port == 9305)
+    khalid-ssh: dst_port == 22
+
+rules:
+ - 'DOMAIN-SUFFIX,cursor.sh,优云666'
+ - 'DOMAIN-SUFFIX,cursor.com,优云666'
+ - 'DOMAIN-SUFFIX,openai.com,优云666'
+ - 'DOMAIN-SUFFIX,anthropic.com,优云666'
+ - 'DOMAIN-SUFFIX,claude.ai,优云666'
+ - 'DOMAIN-SUFFIX,khalidlife.com,DIRECT'
+ - 'DOMAIN-SUFFIX,khalidlife.com.cn,DIRECT'
+ - 'DOMAIN-SUFFIX,khalidlife.cn,DIRECT'
+ - 'DOMAIN-SUFFIX,muyaoct.com,DIRECT'
+ - 'DOMAIN-SUFFIX,khalidlife-test.com,DIRECT'
+ - 'DOMAIN-SUFFIX,noobk.com,DIRECT'
+ - 'DOMAIN-SUFFIX,kieran.com.cn,DIRECT'
+ - 'DOMAIN-SUFFIX,asuscomm.com,DIRECT'
+ - 'DOMAIN-SUFFIX,aliyuncs.com,DIRECT'
+ - 'RULE-SET,company-cidr,DIRECT,no-resolve'
+ - 'SCRIPT,quic,REJECT'
+ - 'SCRIPT,khalid-ssh,REJECT'
+ 
+ 
