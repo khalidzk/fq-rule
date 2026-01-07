@@ -15,7 +15,7 @@ script:
     khalid-ssh: dst_port == 22
 
 rules:
- - 'DST-PORT,22,REJECT'
+ - 'DST-PORT,22,DIRECT'
  - 'DOMAIN-SUFFIX,cursor.sh,优云666'
  - 'DOMAIN-SUFFIX,cursor.com,优云666'
  - 'DOMAIN-SUFFIX,openai.com,优云666'
@@ -31,7 +31,7 @@ rules:
  - 'DOMAIN-SUFFIX,asuscomm.com,DIRECT'
  - 'DOMAIN-SUFFIX,aliyuncs.com,DIRECT'
  - 'RULE-SET,company-cidr,DIRECT,no-resolve'
- - 'SCRIPT,quic,REJECT'
- - 'SCRIPT,khalid-ssh,REJECT'
+ - 'SCRIPT,quic,DIRECT'
+ - 'SCRIPT,khalid-ssh,DIRECT'
  
  
