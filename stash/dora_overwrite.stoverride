@@ -1,5 +1,7 @@
 name: dora规则覆写
 desc: 添加dora规则
+date: '2025-12-10 07:13:21'
+version: '0.2.12'
 
 rule-providers:
   company-cidr:
@@ -13,6 +15,7 @@ script:
     khalid-ssh: dst_port == 22
 
 rules:
+ - 'DST-PORT,22,REJECT'
  - 'DOMAIN-SUFFIX,cursor.sh,优云666'
  - 'DOMAIN-SUFFIX,cursor.com,优云666'
  - 'DOMAIN-SUFFIX,openai.com,优云666'
